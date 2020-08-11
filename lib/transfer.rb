@@ -25,8 +25,8 @@ class Transfer
   def execute_transaction
     binding.pry
     if valid?
-    sender.balance-=amount
-    receiver.balance+=amount
+      sender.balance-=amount
+      receiver.balance+=amount
     end
   end
 
