@@ -24,7 +24,7 @@ class Transfer
 
   def execute_transaction
     binding.pry
-    if valid?
+    # if valid?
   end
 
 end
