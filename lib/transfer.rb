@@ -26,7 +26,7 @@ class Transfer
 
   def execute_transaction
     # binding.pry
-    if valid? && !@@all.include? (self)
+    if valid? && !@@all.include?(self)
       sender.balance-=amount
       receiver.balance+=amount
       self.status = "complete"
