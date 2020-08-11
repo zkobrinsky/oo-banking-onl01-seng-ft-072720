@@ -6,5 +6,5 @@ class Transfer
     @from = from
     @amount = amount
   end
-  
+
 end
