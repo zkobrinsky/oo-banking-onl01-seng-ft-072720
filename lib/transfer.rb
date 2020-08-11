@@ -11,4 +11,10 @@ class Transfer
     @sender
   end
 
+  def receiver
+    @receiver
+  end
+
+  def
+
 end
