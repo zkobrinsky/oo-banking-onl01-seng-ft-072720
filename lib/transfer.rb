@@ -37,7 +37,12 @@ class Transfer
   end
 
   def reverse_transfer
-
+    if @@all.include?(self)
+      sender.balance+=amount
+      receiver.balance-=amount
+      self.status = "reversed"
+      # @@all.
+    end
   end
 
 end
