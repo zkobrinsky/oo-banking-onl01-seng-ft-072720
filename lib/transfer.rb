@@ -15,6 +15,4 @@ class Transfer
     @receiver
   end
 
-  def
-
 end
