@@ -30,7 +30,7 @@ class Transfer
     else
       "Error"
     end
-    
+
   end
 
 end
