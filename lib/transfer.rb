@@ -3,6 +3,8 @@ require "pry"
 class Transfer
   attr_accessor :sender, :receiver, :amount, :status
 
+  @@all = []
+
   def initialize(sender, receiver, amount)
     @sender = sender
     @receiver = receiver
@@ -24,9 +26,10 @@ class Transfer
 
   def execute_transaction
     # binding.pry
-    if valid?
+    if valid? && !@@all.include?self
       sender.balance-=amount
       receiver.balance+=amount
+      self.status = "complete"
     else
       "Error"
     end
